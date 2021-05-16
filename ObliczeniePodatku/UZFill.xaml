@@ -1,0 +1,22 @@
+﻿<Window x:Class="ObliczeniePodatku.UZFill"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ObliczeniePodatku"
+        mc:Ignorable="d"
+        Title="UZFill" WindowState="Maximized" >
+    <Grid Height="Auto">
+        <Label HorizontalAlignment="Center" Content="Twoje wynagrodzenie ( brutto )" Margin="0,48,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <TextBox x:Name="Salary" Margin="0,84,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="24" HorizontalAlignment="Center" Width="210"/>
+        <RadioButton x:Name="Student" Content="Student do 26. roku" Margin="0,149,0,0" VerticalAlignment="Top" HorizontalAlignment="Center" Width="123"/>
+        <Label Content="Opcja: " HorizontalAlignment="Center" Margin="0,112,0,0" VerticalAlignment="Top" Width="61" FontSize="16"/>
+        <RadioButton x:Name="ZusUTegoSamegoPracodawcy" Content="Zus u tego pracodawcy" HorizontalAlignment="Center" Margin="0,169,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="ZusUInnegoPracodawcy" Content="Zus u innego pracodawcy" Margin="0,189,0,0" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+        <Button Content="Oblicz" HorizontalAlignment="Center" Margin="0,216,0,0" VerticalAlignment="Top" Width="113" Height="27" Click="Button_Click"/>
+        <Button x:Name="GoBack" Content="&lt; - Back" VerticalAlignment="Top" Foreground="Gray" Margin="643,22,643,0" Background="Transparent" BorderThickness="0" FontSize="14" Click="GoBack_Click"/>
+        <Label x:Name="KwotaNetto" Content="" HorizontalAlignment="Center" HorizontalContentAlignment="Center" Margin="0,279,0,0" Foreground="DarkGreen" VerticalAlignment="Top" Width="510" Height="64" FontSize="20"/>
+
+
+    </Grid>
+</Window>

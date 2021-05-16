@@ -1,0 +1,25 @@
+﻿<Window x:Class="ObliczeniePodatku.OPMain"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ObliczeniePodatku"
+        mc:Ignorable="d"
+        Title="Obliczenie Podatku 2020" WindowState="Maximized">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="UserName"  Grid.Column="1" Margin="56,232,55,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="27" FontSize="16"/>
+        <PasswordBox x:Name="UserPwd" Grid.Column="1" Margin="54,314,55,0" VerticalAlignment="Top" Height="27" FontSize="16"/>
+        <Label Content="Login" Grid.Column="1" HorizontalAlignment="Center" Margin="0,206,0,0" VerticalAlignment="Top"/>
+        <Label Content="Password" Grid.Column="1" HorizontalAlignment="Center" Margin="0,288,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="LoginBtn" Content="Login" Grid.Column="1" HorizontalAlignment="Center" Margin="0,384,0,0" VerticalAlignment="Top" Width="226" Height="27" Click="LoginBtn_Click"/>
+        <Label Content="Don't have an account?" Grid.Column="1" Margin="90,426,91,0" VerticalAlignment="Top" FontSize="14" HorizontalAlignment="Center"/>
+        <Button x:Name="SignUpBtn" Content="Sign Up" Foreground="Blue" Grid.Column="1" Margin="142,460,143,0" VerticalAlignment="Top" Background="Transparent" BorderThickness="0" FontSize="14" Click="SignUpBtn_Click"/>
+
+
+    </Grid>
+</Window>
