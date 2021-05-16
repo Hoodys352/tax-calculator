@@ -5,6 +5,7 @@ Simple Tax Calc App with authorization and authentication
 ## Technology used
 
 * .Net Core 3.1
+* C#
 * WPF
 * XAML
 
